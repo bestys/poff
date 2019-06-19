@@ -2,26 +2,15 @@ package com.best.user.entity;
 
 import java.io.Serializable;
 
-public class SysRole implements Serializable {
+import com.baomidou.mybatisplus.extension.activerecord.Model;
+
+import lombok.Data;
+@Data
+public class SysRole extends Model<SysRole> implements Serializable {
     static final long serialVersionUID = 1L;
 
     private Integer id;
 
     private String name;
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 }

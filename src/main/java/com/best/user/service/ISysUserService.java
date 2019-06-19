@@ -13,5 +13,7 @@ public interface ISysUserService extends IService<SysUser> {
 
     public List<SysUser> selectListBySQL();
 
+    public SysUser selectByName(String name);
+    
     public List<SysUser> selectListByWrapper(Wrapper wrapper);
 }
